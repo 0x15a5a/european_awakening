@@ -1,0 +1,8 @@
+extends layout
+
+block layout-content
+  script.
+    var socket = io.connect();
+    socket.on("connect", function(data){
+      socket.emit("join", "Hello");
+    });
