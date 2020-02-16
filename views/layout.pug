@@ -9,5 +9,16 @@ html
     link(href='/css/styles.css', rel='stylesheet')
     script(src="/socket.io/socket.io.js")
   body
-    div#root
+    div.root
+      div.header
+        span#blink.title European Awakening
+        span#buzz.subtitle The cultural revolution has begun
+      div.content
+        div.column-container
+          div.column.column-left-side
+          div.column.column-right-side
+        div.content-show
+        div.column-container
+          div.column.column-left-side
+          div.column.column-right-side
       block layout-content
